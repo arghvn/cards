@@ -1,3 +1,9 @@
 package main
 
 func main() {
+
+	// newdeck, This function creates a new batch 
+	// of cards each time it is called
+
+	
+
