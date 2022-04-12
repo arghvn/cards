@@ -5,5 +5,16 @@ func main() {
 	// newdeck, This function creates a new batch 
 	// of cards each time it is called
 
+
+	//An array is required in which each element 
+	//represents a card from the game
+
+    //For each function we define, we must define a task
+
+    //We need a function that can print cards, we name it print
+
+	//The function we use for the mixing property is called shuffle
 	
+	//To select a set of cards, we use the deal function
+
 
