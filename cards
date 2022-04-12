@@ -25,5 +25,19 @@ func main() {
 
 	var card.string = "Ace of spades"
 
+	//Easy way to define variables 
+	//cards :="Ace of spades"
+	//colon equal
+
 	fmt.Println(card)
 
+	//We want to define a function that assigns different strings
+	// to a variable because we have 52 cards
+
+	func Newcard () {
+		return "five of diamonds"
+	}
+    card := Newcard ()
+	
+	//In line 6, we change the variable from one mode to 
+	//several modes with this command card := Newcard
