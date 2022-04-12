@@ -1,5 +1,7 @@
 package main
 
+import "fmt"
+
 func main() {
 
 	// newdeck, This function creates a new batch 
@@ -14,7 +16,14 @@ func main() {
     //We need a function that can print cards, we name it print
 
 	//The function we use for the mixing property is called shuffle
-	
+
 	//To select a set of cards, we use the deal function
 
+    //We select a variable of type string and assign a value to it
+	//The name of this variable is card
+
+
+	var card.string = "Ace of spades"
+
+	fmt.Println(card)
 
