@@ -56,6 +56,24 @@ func main() {
 	//In low-level languages, it must be clear what the function returns
 	//The second error says there are too many arguments to return while the string is empty.
 
+	//Analyze this command: func Newcard () string {} :
+	//define a function by name Newcard
+	//Assign value to it as a string
+	//In the return section, we also want to return the string
+	//If we wanted to return the int variable, for example, we would have to write reutrn 12 without " "
+
+	//This command only creates one card while we need several cards so we go to the arrays and slices
+	//for example:
+
+	Primes := [6] int {2,3,5,7,11,13}
+
+	var s[] int = Primes[1:4]
+
+	fmt.Println(s)
+
+	//
+
+
 	
 
 
