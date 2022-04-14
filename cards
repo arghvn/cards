@@ -34,10 +34,29 @@ func main() {
 	//We want to define a function that assigns different strings
 	// to a variable because we have 52 cards
 
-	func Newcard () {
-		return "five of diamonds"
-	}
+	func Newcard () string {
+
+		
     card := Newcard ()
-	
+
 	//In line 6, we change the variable from one mode to 
 	//several modes with this command card := Newcard
+	
+	//About the definition of the Newcard function :
+	//Go asks us to state very clearly what kind of data to return from each function
+	//We told the compiler to consider a certain string type whenever a new card is called.
+
+	return "five of diamonds"
+
+	}
+
+	//If we did not write the last command, return : While saving the file, it shows us an error that you 
+	//have written a function that does not return any data
+	//error: No result value excepted  or  error: too many arguments to reurn, have (string) and want()
+	//In low-level languages, it must be clear what the function returns
+	//The second error says there are too many arguments to return while the string is empty.
+
+	
+
+
+
