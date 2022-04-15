@@ -23,13 +23,13 @@ func main() {
 	//The name of this variable is card
 
 
-	var card.string = "Ace of spades"
+	cards := []string{"Ace of Diamonds",Newcard()}
 
 	//Easy way to define variables 
 	//cards :="Ace of spades"
 	//colon equal
 
-	fmt.Println(card)
+	fmt.Println(cards)
 
 	//We want to define a function that assigns different strings
 	// to a variable because we have 52 cards
@@ -71,7 +71,33 @@ func main() {
 
 	fmt.Println(s)
 
-	//
+	//Slice S refers to the values of the array prime
+
+	t := int {2,3,5,7,11,13}
+
+	//The length of the array is always greater than or equal to the slice
+
+	//the append function, With this function we can add an item to the slice,
+	// the length of the array is always constant so replacement occurs.
+
+	//In the array we defined, only 5 cards could be stored, while if we defined a slice,
+	// we could increase or decrease them by mixing.
+
+	//So we have to make a slice that has several cards in it
+	//So instead of the commandو var card.string = "Ace of spades" و In the body of the main function
+	//The variable must be of type string and replace this command in the body of the main functionو cards := []string{}
+	
+
+	//For example, so that our slice has two new cardsو cards := []string{Newcard(),Newcard()}
+
+	//cards := []string{"Ace of Diamonds",Newcard()}, The final file we wrote is to add a card for us
+
+	//A common arrogance in development: cards declared and not used 
+
+	//We have to print it to fix the error و fmt.Println(cards)
+
+
+
 
 
 	
