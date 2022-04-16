@@ -37,7 +37,7 @@ func main() {
 	func Newcard () string {
 
 		
-    card := Newcard ()
+    cards := Newcard ()
 
 	//In line 6, we change the variable from one mode to 
 	//several modes with this command card := Newcard
@@ -96,6 +96,13 @@ func main() {
 
 	//We have to print it to fix the error و fmt.Println(cards)
 
+	//With the append function, we can add a member (card) to the slice
+
+	cards = append(cards,"saix of spades")
+
+	//If we type the print command, we have three outputs , six of spades , cards(ace of diamonds and newcard)
+
+	
 
 
 
