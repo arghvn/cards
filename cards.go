@@ -122,6 +122,10 @@ func main() {
 
 	//To display the code that shows how the deck works, create a go file in the project folder
 	
+	//In the first line, the connection between the folders in this project must be specified with the pacakemain command
+
+	//In fact, we created this extra type of data so that we can create custom functions with it that can only be executed with this type of data.
+	// This type of data is very similar to slices.
 
 
 
