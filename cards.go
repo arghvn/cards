@@ -29,7 +29,11 @@ func main() {
 	//cards :="Ace of spades"
 	//colon equal
 
-	fmt.Println(cards)
+	for i ,cards := range cards {
+
+		fmt.Println(i,cards)
+
+	}
 
 	//We want to define a function that assigns different strings
 	// to a variable because we have 52 cards
@@ -102,7 +106,24 @@ func main() {
 
 	//If we type the print command, we have three outputs , six of spades , cards(ace of diamonds and newcard)
 
+	//loop for
+	//Temporarily delete the print command in the commands (fmt.Print(cards)
+	//and add the loop in the body of the main function
+	//we have three outputs, (0)Ace of diamonds, (1)Five of Dimanods, (2)six of Diamnods
+	//indexes start from zero
+
+	//We need to create a new type of data type here
+	//We want to expand a base type and add some extra features to it
+	//decktype creates that corresponds to strings
+	//This type of data keeps the list of playing cards in the form of a slice for us, each member of which is a string
+	//type deck []string
+	//The above command tells the compiler that we want to create an array of strings 
+	//and add a set of functions that are used to work with them.
+
+	//To display the code that shows how the deck works, create a go file in the project folder
 	
+
+
 
 
 
