@@ -29,11 +29,7 @@ func main() {
 	//cards :="Ace of spades"
 	//colon equal
 
-	for i ,cards := range cards {
-
-		fmt.Println(i,cards)
-
-	}
+	cards.Print()
 
 	//We want to define a function that assigns different strings
 	// to a variable because we have 52 cards
