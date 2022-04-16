@@ -69,6 +69,7 @@ func main() {
 
 	var s[] int = Primes[1:4]
 
+
 	fmt.Println(s)
 
 	//Slice S refers to the values of the array prime
@@ -122,6 +123,8 @@ func main() {
 
 	//In fact, we created this extra type of data so that we can create custom functions with it that can only be executed with this type of data.
 	// This type of data is very similar to slices.
+
+	//p17
 
 
 
