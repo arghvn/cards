@@ -39,4 +39,9 @@ func (d deck) Print(){
 
 //cards.Print()
 
+//Note that inside the body of the main function, we defined a variable called cards, 
+//which we then put in print. Here, with the changes we made, we transferred the cards variable as a d variable to the print function. 
+//According to the contract, one or two letter abbreviations are assigned to the recipients, so it can be written:
+//func (cards deck)
 
+d = cards 
