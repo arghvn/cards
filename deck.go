@@ -108,3 +108,23 @@ for i, suit := range cardsuits {
 
 //The number that displays :4*4=16
 
+//deal function : This function designs a new hand for the game
+//create a new 'hand' of cards
+
+//deck : This function stored all the playing cards in an array
+//with deal function we create a new deck 
+
+//deal function : The idea of this function is that we take an existing batch of playing cards 
+//and then create a new batch of a certain size.
+
+//for example : We have a deck of 4 cards, Ace of spades, Two of spades, Three of spades, Four of spades
+//Now we determine that we want to have a folder (hand) of cards containing three cards
+//deal(3)
+//Our hand consists of three of the four available cards and one of the cards remains inside the deck.
+//The remaining card type is still the deck
+//deal : So with this function, we divided a slice into several slides.
+
+
+
+
+//save to file function : The purpose of this function is to save a deck to the hard disk of the machine used for programming.
