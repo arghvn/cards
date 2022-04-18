@@ -45,3 +45,40 @@ func (d deck) Print(){
 //func (cards deck)
 
 d = cards 
+
+
+//Access to print any variable of type deck :
+//func (d deck) print() {}
+
+//Newdeck  : This function returns a list of new cards for us, It is also a deck type
+
+func Newdeck () deck {
+
+}
+
+//Question : Does the function we defined above need a receiver ?
+//Response : No The purpose of this function is to create a Newdeck variable.
+// If we wanted to work on the deck we needed to.
+// So receivers are only used where we want to call a variable from the existing variables.
+
+cards := deck {
+
+}
+
+//With the above command, we created a variable called cards and of the deck type.
+// This variable starts with zero and initially there are no cards in it.
+//This zero value will eventually reach 52 cards
+//So we have to have the cards mixed in them
+//for example :
+
+cards := deck {"Ace of spades ","Two of spades "}
+
+//This seems like a long and time consuming task
+//As a clever method, you can create an empty deck and then create two separate slices in them
+//One of these slices holds the cards(suit) and the other slice stores the value of each(value).
+
+cardsuits := []string{"Spades","hearts","Diamonds"}
+cardsvalue := [string{"Ace","Two","Three"}
+
+
+
