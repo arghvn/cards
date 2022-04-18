@@ -77,8 +77,34 @@ cards := deck {"Ace of spades ","Two of spades "}
 //As a clever method, you can create an empty deck and then create two separate slices in them
 //One of these slices holds the cards(suit) and the other slice stores the value of each(value).
 
-cardsuits := []string{"Spades","hearts","Diamonds"}
-cardsvalue := [string{"Ace","Two","Three"}
+//So we can set two different loops to repeat in the suit list and the card value list.
+// And determine each time a card is combined with a value of a value and a value of a suit and go to the carddeck.
+// First we need to create a slice of the strings and insert the types of cards in it.
+
+//The deck is a temporary place where playing cards go in it.
+
+cardsuits := []string{"Spades","hearts","Diamonds","club"}
+cardsvalue := [string{"Ace","Two","Three","four"}
+
+//We need to write two for loops nested. 
+//The final state is a variable called a card that has a suit attribute with a value attribute.
+
+//Finally, we want to return the slice card, then use the return command.
 
 
+for i, suit := range cardsuits {
+	for j, value := range cardValues {
+		cards = append(cards, value+" of "+suit)
+	}
+}
+}
+
+//In this case, changes i and j are not used.
+//The compiler gives us an error with the message that
+//i and j declared and not used
+//To fix the error, we have to tell the compiler that we are aware of these bugs,
+// but we do not intend to use these variables at the moment, 
+//so we use the  underline.
+
+//The number that displays :4*4=16
 
