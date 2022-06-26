@@ -1,7 +1,9 @@
 package main
 
-import "fmt"
-
+import (
+	"fmt"
+    "os"
+)
 func main() {
 
 	// newdeck, This function creates a new batch 
@@ -124,7 +126,15 @@ func main() {
 	//In fact, we created this extra type of data so that we can create custom functions with it that can only be executed with this type of data.
 	// This type of data is very similar to slices.
 
-	//p17
+    fmt.Println("Error:", err)
+	
+	// use os package for exit 
+	// this standard library peovides a platform independent interface to operating system functionality
+	// it means no different what is our operating system , 
+	// use exit from this package and assign 0 argument to it 
+	// assigning 0 means the code run correctly and assigning each value except 0 means we have a problem
+
+	os.Exit(1)
 
 
 
