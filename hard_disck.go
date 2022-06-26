@@ -44,3 +44,16 @@ package main
 // Perm os.filemode
 // Perm = short for permission
 // Tells us what permissions to use if we need to create a file.
+
+// If there is no problem reading the file from the hard disk, the value assigned to the error is nil.
+// This value in GO means there is no value.
+// The if loop can be used to check nil in GO.
+// To do this, you must write in the body of the function:
+// if err! = nil {
+// }
+// ! = Means not
+// This structure states that if err is not nil, run the code.
+// What we have just done is called error handling.
+// The error that was checked is called the file call error.
+// Suppose we want to read a file that does not exist on our hard drive, so we do not get anything from calling the file, ie
+// byte slice = empty
