@@ -97,7 +97,7 @@ for i, suit := range cardsuits {
 		cards = append(cards, value+" of "+suit)
 	}
 }
-}
+
 
 //In this case, changes i and j are not used.
 //The compiler gives us an error with the message that
@@ -124,7 +124,28 @@ for i, suit := range cardsuits {
 //The remaining card type is still the deck
 //deal : So with this function, we divided a slice into several slides.
 
-
-
-
 //save to file function : The purpose of this function is to save a deck to the hard disk of the machine used for programming.
+
+// in byte slice we have here , there are amont of string type 
+// in past we have a deck and change it to slice of string []string
+// then change it to string and finally change to []byte (byte slice)
+// now take this steps opposite
+// we have []byte changing to string and changing to []string and then change to deck
+// []byte slice show all character in game
+// changing []slice to string 
+string(bs)
+// by this command we can see byte slice as string
+
+// if in thisb step we print the values we have Ace of spades , two of spades ...
+// joining all of this do with strings package 
+// but for oppisite we also use strings package 
+// in this package we have a function named split
+
+// func split(s, sep string) []srtring
+// this function change a slice of string to multple seperated strings
+
+s := Strings.split(string(bs), ",")
+// s is a slice of string
+// in fact we assigned slice of string to va variable named s
+// at first we write the type we want and then the type we have
+return deck(s)
