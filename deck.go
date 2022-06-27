@@ -1,5 +1,13 @@
 package main
 
+import (
+	"fmt"
+	"io/ioutil"
+	"math/rand"
+	"os"
+	"strings"
+)
+
 // create a new type og 'deck'
 //which is a slice of strings
 
@@ -149,3 +157,11 @@ s := Strings.split(string(bs), ",")
 // in fact we assigned slice of string to va variable named s
 // at first we write the type we want and then the type we have
 return deck(s)
+
+func shuffle (d deck) {
+	for i := range d {
+		newPosition := rand.Intn(len(d)- 1)
+		d[i], d[newPosition] = d[newPosition], d[i]
+	}
+}
+// we can use instead of d , the length of array or slice that each number that we want for us
