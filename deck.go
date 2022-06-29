@@ -6,6 +6,7 @@ import (
 	"math/rand"
 	"os"
 	"strings"
+	"time"
 )
 
 // create a new type og 'deck'
@@ -159,6 +160,10 @@ s := Strings.split(string(bs), ",")
 return deck(s)
 
 func shuffle (d deck) {
+	func (d deck) shuffle () {
+		source := rand.newsource(time.Now().unixnsno())
+		r := rand.New(source)
+	}
 	for i := range d {
 		newPosition := rand.Intn(len(d)- 1)
 		d[i], d[newPosition] = d[newPosition], d[i]
