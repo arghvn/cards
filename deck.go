@@ -170,3 +170,23 @@ func shuffle (d deck) {
 	}
 }
 // we can use instead of d , the length of array or slice that each number that we want for us
+
+
+// check a more complex and advanced testing
+// we define a save to file function and a newdeck from file function in this file and we want make sure that it can take a deck 
+// and save it to hard drive
+// we should create a test function that in that function a deck created
+// step 1 : create a deck 
+// step 2 : save to file
+// and in the next section indicate this work is done and file save correctly
+// step 3 : file created 
+// in the next section take a back up from file a create a new deck 
+// step 4 : attempt to load file
+
+// testing save to deck and new deck from file 
+// delete files in current working directory with the name deck testing 
+// and then create a deck and save to file and load from file and assert deck length and then then 
+// delete any files in current working directory with the name "_decktesting"
+
+// in package os searching index section and remove functiom 
+// func removes the name file or directory if there is an error, it will be of type path error

@@ -16,6 +16,13 @@ func TestNewDeck(t *testing.T) {
 		// the text used for this reason
 		// the second argument show this authorizes number for client
 	}
+	// testing two other parameters has a same code :
+	if d[0] != "ace of spades"{
+		t.Errorf("expected first card of ace of spades, but got %v", d[0])
+	}
+    if d[len(d) - 1] != "four of clubs"{
+		t.Errorf("expected last card of four of clubs, but got %v", d[len(d) - 1])
+	}
 }
 
 // *testing.T is a test handler , verify the type of value that will send to the function
