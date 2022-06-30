@@ -18,3 +18,6 @@
  for testing we can do it just for indicate in error template or show the solution as a notification
  write if statement to see if the deck has the right number of cards 
  if it doesnt , tell the GO test handler that something went wrong
+
+suits {spades, diamonds, heart, club}
+value {ace, two, three, four}
