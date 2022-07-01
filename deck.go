@@ -1,5 +1,6 @@
 package main
 
+// package main phrase use for unite multi file from our project, the fiers step in each project
 import (
 	"fmt"
 	"io/ioutil"
@@ -8,11 +9,16 @@ import (
 	"strings"
 	"time"
 )
+// importing use for access to GO libraries
 
 // create a new type og 'deck'
 //which is a slice of strings
 
 type deck []string
+
+// deck type is a customize type
+// a type of layers from slice of strings
+// new deck function create a new and empty deck when we call it
 
 //With the above command code, we declared that wherever a string is created in the slices,
 // it is ready and they can be replaced with deck type.
@@ -190,3 +196,17 @@ func shuffle (d deck) {
 
 // in package os searching index section and remove functiom 
 // func removes the name file or directory if there is an error, it will be of type path error
+
+// the func newDeck indicate a value from type deck 
+// in command func (d deck)print(){} we define a reciever from type deck , by this we can recieve and print any deck type
+
+
+// in this project we have a slice of string that each string show a card
+// we didnt write any command for value of the card or suit of the card 
+// for this work we must assign strings to value and suit
+// we define a struct that showing us card properties ... data structure 
+
+// data structures = collection of properties that are related together
+// struct = short for structure / a set of properties that related together
+
+// we can create a data structure by type card and assign two properties as suit and value to it.
