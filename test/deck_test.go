@@ -28,3 +28,23 @@ func TestNewDeck(t *testing.T) {
 // *testing.T is a test handler , verify the type of value that will send to the function
 
 // out put : test passed
+
+
+func TestSaveToDeckAndNewDeckFromFile(t *testing.T) {
+	// this function use for testing eveything related to save and delete.
+	os.Remove("_decktesting")
+	deck := newDeck()
+	deck.saveTofile("_decktesting")
+	loadedDeck := newDeckfromfile("_decktesting")
+	if len(loadedDeck) != 16 {
+		t.Errorf("expectes 16 cards", in deck, got %v, len(loadedDeck))
+	}
+	os.Remove("_deckktesting")
+}
+
+// output : pass
+
+// for making sure that the test work correctly , we make a changes in it for examlpe enter 160 instead 16
+
+// output :
+// error
