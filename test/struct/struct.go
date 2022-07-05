@@ -2,6 +2,11 @@
 
 package main
 
+type contactinfo struct {
+	email   string
+	zipcode int
+	contact contactinfo
+}
 type person struct {
 	firstname string
 	lastname  string
@@ -49,3 +54,6 @@ func main() {
 // lastname in struct was string
 // contact in struct is contactinfo
 // contactinfo properties : email string and zipcode int
+// we difine second struct and inside the main struct make a contact and call second struct on it.
+
+// person definition in struct3
