@@ -72,4 +72,19 @@ func (p person) print() {
 // Jim := person{}
 // after do this , GO in that struct create a person for that person
 
+// for example address in RAM is 0001 and value in this address is person { firsname ...} for a person by name Jim
+
+// pointers use for using one variable in multi place for avoiding RAM usage.
+// each address is a container for data so usually Jim variable point to this address (0001)
+
+// then we define a changable funtion for Jim by reciever by type person that this reciever do our changes for us in name
+// when we call this function , GO search in RAM for first empty space for example 0003
+
+// now
+// 0001 = person{firstname = Jim ...} from type Jim
+// 0003 = person{firsname = Jimmy ...} from type p
+
+// GO is pass by value language
+// pass by value means each time we send a value to a function , GO get that value or struct and copy the structure and then save a empty address.
+// after a time we update and Jim is in that structure by initial name
 
