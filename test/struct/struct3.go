@@ -19,6 +19,8 @@ func main() {
 			zipcode: 94000,
 		}
 	}
+
+	jim.updatename("Jimmy")
 	jim.print()
 	// fmt.printf("%+v", Jim)
 }
@@ -34,9 +36,28 @@ func main() {
 // so in this code we can define a person as a reciever 
 // we will define a function that recieve a person(like Jim)and do something like printing all persons details
 
+// we want to define a function that get person as a reciever and change the firstname 
+// we should in this function argument recieve firstname as a string
+
+func (p person) updatename(newfirstname string) {
+	p.firstname = newfirstname
+}
+
+// this function has a reciever by type person and replacement is done successfully
+
 func (p person) print() {
 	fmt.printf("%v", p)
 }
 
 // above command means we can call this function with any type or any value related to person.
+
+// in terminal we have output :
+
+// firsname: jim
+// lastname and contact info without changes 
+
+// a summary about this commit :
+// definition a function that recieve a struct as a reciever
+// definition print and update for name that both of them have a reciever by type person
+
 
