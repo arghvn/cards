@@ -60,4 +60,16 @@ func (p person) print() {
 // definition a function that recieve a struct as a reciever
 // definition print and update for name that both of them have a reciever by type person
 
+// the name not changed 
+// this commit goal : why does after definition functions like Update and name the task dont work correctly ?
+// pointer 
+// in computer RAM is like a set of boxes , each boxes in our computer can have data  and value ...
+// each data and value in this boxes has a seperated and unique address.
+// sometime like this code the compilre tell the computer i want retrieve some of data , this retrievation done in RAM
+// RAM look at to addresses and that address use for storing data and take down value from it
+
+// in programm we define a type by name type person and assign it to a person by name Jim
+// Jim := person{}
+// after do this , GO in that struct create a person for that person
+
 
