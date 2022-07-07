@@ -16,3 +16,19 @@ in this case pointerToperson is the memory address that Jim exit at
 
 I dont want to look at the memory address any more.
 instead give me direct access to whatever this thing or whatever value is actually string here
+
+*Jimpointer turns into the actual struct of type person.
+Jim is a refrence to the struct in memory (the actual vaalue of the struct)
+
+we used & its cause Jim changed to memory address or a pointer and then assign it as a value to Jimpointer
+then we called Jimpointer.update and then print it
+in function definition we changed reciever type to *person (a pointer that points at a person)
+
+when we use * and a pointer , pointer change to value
+
+*person : a type of pointer that point at a person
+
+note : 
+func(pointerToperson *person(this is a type description it means we are working with a pointer to a person))updatename(){
+    *pointerToperson(this is an operator it means we want to manipulate the value the pointer is referencing)
+}
