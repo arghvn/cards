@@ -88,3 +88,14 @@ func (p person) print() {
 // pass by value means each time we send a value to a function , GO get that value or struct and copy the structure and then save a empty address.
 // after a time we update and Jim is in that structure by initial name
 
+// so by this update , GO copy the values un this container (address) and storage it in another address
+// then GO refer to new addresss by reciever for reading data.
+// because we didnt update the original address and we have just a copy of it
+
+// GO is pass by value : if we pass a value to a function , GO copy that value and this cpied value is accessable in function for ever
+// it means when we assign Jim to updatename ,GO take a copy from that struct 
+// so if we update the person in updatename ,the changes not expand to other spaces
+// so the Jim doesnt change
+// the problem here is that we must make sure that when we call the Jim updatename in fact we are looking for updated from it
+// & = ampersend
+// refer to pointer.go
