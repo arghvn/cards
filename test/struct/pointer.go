@@ -75,3 +75,11 @@ func (p person) print() {
 
 // when sign * come before a type (like type person ,it means we are looking for a type of pointer that refer to a variable that store a pointer
 // when the sign * come before actual pointer or a variable that store a pointer ,it means we want change this actual pointer to a person value.
+
+
+
+
+// bot now we will notice that there is a mismatch in our reciever types.
+// in fact vs code tell us Jim is a variable by type person and Jim has a value from struct
+// and there is not any address memory and pointer here 
+// but we can use updatename function that has a reciever by type pointerToperson
