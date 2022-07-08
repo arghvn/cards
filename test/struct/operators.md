@@ -32,3 +32,12 @@ note :
 func(pointerToperson *person(this is a type description it means we are working with a pointer to a person))updatename(){
     *pointerToperson(this is an operator it means we want to manipulate the value the pointer is referencing)
 }
+
+
+(pointerToperson *person) in the reciever we said that pointer to a person is a value of type *person
+
+*person , it means that is a type description and it means that this update name function can
+ only be called with the reciever of a pointer to a person
+this is a specifing that we want a type of type pointer to a person
+
+*pointerToperson : this is an actual operator that takes this pointer and returns it into an actual value.
