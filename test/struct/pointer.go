@@ -83,3 +83,33 @@ func (p person) print() {
 // in fact vs code tell us Jim is a variable by type person and Jim has a value from struct
 // and there is not any address memory and pointer here 
 // but we can use updatename function that has a reciever by type pointerToperson
+
+// in GO if imagine a reciever with a type of pointer , when we try to call this function
+// GO allow us to call it with a pointer
+
+// initial code :
+// Jimpointer := Jim
+// Jimpointer.updatename("Jimmy")
+// Jimpointer = type of person or a pointer to a person
+
+// edited code :
+// Jim.updatename("Jimmy")
+// Jim is type of person
+
+// the function that called : func(pointerToperson *person)updatename
+// *person is type of person or a pointer to a person
+
+// 1-ok,Jimpointer is of type pointer to a person and then we had our recieverwhich was pointer person.
+// but GO allows us to take the shotcut and says if you have a variable thats just type of person but your reciever
+// is pointer to a person thats totatlly fine
+// and GO automatically turn your variable of type person into pointer person for you
+
+// this is just a little bit of shortcut that we are going to use basically every single time
+// that we use a reciever type (in *person) of a reciever type of a pointer
+// in section without shortcut we hide memory address but by using shortcut this work is not necessary
+
+// GO is a pass by value language so any time we pass a value to a function either as a reciever or as an argument that data is copied 
+// in memory and so the function by default is always going to be working on a copy of our data structure.
+// we can address this problem and modify the actual underlying data structure through the use of pointer and memory a address.
+
+// 
