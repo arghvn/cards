@@ -112,4 +112,11 @@ func (p person) print() {
 // in memory and so the function by default is always going to be working on a copy of our data structure.
 // we can address this problem and modify the actual underlying data structure through the use of pointer and memory a address.
 
-// 
+// Gotcha /gacha/ = got you 
+// in programming it means An unexpected thing has happened
+// its not error or bug but its a technique
+// here we use it for pointers
+
+// pointers has a standard mode that use with () and * and name of pointer and method  (just for methods created on pointers)
+// In fact, when contrary to programming logic, an exception occurs , we call it gotcha 
+// These are programmed modes for the convenience of programmers 
