@@ -26,3 +26,8 @@ func main () {
 
 // output in terminal :
 // map[red:#ff0000 green:#4bf745]
+
+// so we defined a map and assign initial value to it
+// another way to define map
+// newdeclaremap.go file
+
