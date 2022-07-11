@@ -27,3 +27,7 @@ delete(colors, 10)
 // output :
 // map[]
 
+// static variable
+// It means that the value attributed to that variable should be set only once, that is, only one location of the memory is assigned 
+// to such variables. In other parts of the program, the said variable cannot be set again, but the execution of a series of
+// commands related to this variable leads to The change in value is attributed
