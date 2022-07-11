@@ -53,5 +53,5 @@ value that we create is kind of this what we refer to as a reference type .
 the slice data structure is what we refer to as a reference type because it is a refernce to another data structure in memory
 
 its totally ok if we make a copy of this refernce in memory because its still always going to be pointing back to the same underlying true
-source of data
+source of datao
 
