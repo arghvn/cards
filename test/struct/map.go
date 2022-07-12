@@ -31,3 +31,17 @@ func main () {
 // another way to define map
 // newdeclaremap.go file
 
+// where we can use a datastructure against another ? means where we can use struct for datastructure and wher map ?
+// when we want indicate a set of related property , we use map 
+// for example :
+// this code is mapping between each color and related hex
+
+// in map all values must be the same type .
+// in struct keys dont support indexing .
+// map use to represent a collection of related properties 
+// struct use to represent a thing with a lot different properties . 
+// in map we dont need to know the list  of all different keys or all different fiels in complie time. 
+// in struct we need to know all the different fields at compile time.
+
+// in map we can create a map and add or cut some properties.
+// in struct the properties must be define correctly at first.
