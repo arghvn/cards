@@ -44,3 +44,24 @@ func printmap(c map[string]string){
 // hex code for green is #45f745
 // hex code for white is #ffffff
 // hex code for red is #ff0000
+
+// difference between struct and map
+// in map all keys must be the same type but in structs all the values can be of completly different types.
+// in structs values can be of different types.
+// this comparsion just do for value because in structs , there are is no meaning named key.
+
+// in maps keys are indexed , so we can iterate over then ,so we can iterate over all pairs by a map.
+// this note is impossible in structs
+
+// important note :
+// map is reference type and struct is value type
+
+// when we assign a map to a function in fact we are assigning a reference to a datastructure. 
+// for example printmap function that the thing we have was colors , if we create a change in printmap like * or & or make a change in datastructure 
+// in main section of colors : we will see the updated output
+
+// so to assign map to function doesn use copy but also use reference
+// when we assign a struct to a function , in fact we create a copy from all of the struct
+// when this struct changed the original section not changed because this section define out of function. 
+
+
