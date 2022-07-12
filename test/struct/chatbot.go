@@ -10,7 +10,17 @@ type SpanishBot struct{}
 // in struct we have to define the ability to recieve Englishbot and Spanishnot as a reciever
 
 func main() {
+	eb := EnglishBot{}
+	sb := SpanishBot{}
+	printGetgreeting(eb)
+	printGetgreeting(sb)
+}
 
+func printGetgreeting(eb englishbot) {
+	fmt.println(eb.getgreeting())
+}
+func printGetgreeting(sb spanishbot) {
+	fmt.println(sb.getgreeting())
 }
 
 func (eb EnglishBot) getgreeting() string {
