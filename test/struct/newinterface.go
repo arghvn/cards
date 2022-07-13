@@ -27,3 +27,11 @@ func main() {
 // exit is a command for closing the program
 // overall if this code get 0 the program do its duty compeletly and close and if get any value except 0 this code
 // close with error
+
+type response struct {
+	status     string // eg "ok"
+	statuscode int    // eg 200
+	proto      string // eg "http/1.0"
+	protomajor int    // eg "1"
+	protominor int    // eg "0"
+}
