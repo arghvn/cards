@@ -35,3 +35,20 @@ type response struct {
 	protomajor int    // eg "1"
 	protominor int    // eg "0"
 }
+
+// in GO we can take multiple interfaces
+// different onterfaces and assemble thenm together to form another interface.
+// both reader and closer are interfaces
+// the reader read closer interface says if you want to fulfill the read closer interface like if you want to satisfy the requirements
+// of this interface you have to satisfy the requirements of both are reader and the closer
+
+// we defined two custom types englishbot and spanishbot with getgreeting function and return string
+
+// type enflishbot struct
+// func (englishbot)getgreeting() string
+
+// we then difined an interface called bot and we said that if some other types inside of our application
+// if any other types what soever defined a function called getgreeting that returned a strinng then that
+// other type could also be considered to be a bot.
+
+// it allowed us to then define a function called printgreeting
