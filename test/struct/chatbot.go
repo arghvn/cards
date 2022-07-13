@@ -37,3 +37,8 @@ func (sb SpanishBot) getgreeting() string {
 // function getgreeting for english and spanish probably very different logic in these functions
 
 // function printgreeting ,this will probably have identical logic
+
+// temporary for testing code ,, writeprint commandfor sb in main function and printgreeting
+
+// there is no problem
+// in fact interface use for reuse multi struct for multi applicatoin
